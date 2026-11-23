@@ -18,6 +18,7 @@
 ```bash
 git clone https://github.com/1kdev/python-project-49.git
 cd python-project-49
+[![demo](demo.gif)](https://asciinema.org/a/JsRQuSIupcbRq5wv)
 ```
 
 ## Использование
