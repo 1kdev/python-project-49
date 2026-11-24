@@ -23,11 +23,12 @@ cd python-project-49
 ## Использование
 
 <!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
-Brain-Even:
+**Brain-Even:**
 [![demo](even.gif)](https://asciinema.org/a/JsRQuSIupcbRq5wv)
 
-Brain-Calc:
+**Brain-Calc:**
 [![demo](calc.gif)](https://asciinema.org/a/rq2jlIqz69GMixZ0)
+
 ---
 
 <details>
