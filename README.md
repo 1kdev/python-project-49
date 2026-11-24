@@ -19,12 +19,15 @@
 git clone https://github.com/1kdev/python-project-49.git
 cd python-project-49
 ```
-[![demo](demo.gif)](https://asciinema.org/a/JsRQuSIupcbRq5wv)
 
 ## Использование
 
 <!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+Brain-Even:
+[![demo](even.gif)](https://asciinema.org/a/JsRQuSIupcbRq5wv)
 
+Brain-Calc:
+[![demo](calc.gif)](https://asciinema.org/a/rq2jlIqz69GMixZ0)
 ---
 
 <details>

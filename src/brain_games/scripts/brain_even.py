@@ -1,12 +1,10 @@
 from random import randint
 
-import prompt
+from brain_games.cli import welcome_user
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
+    name = welcome_user()
     play_game(name)
 
 
