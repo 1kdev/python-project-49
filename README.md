@@ -24,10 +24,13 @@ cd python-project-49
 
 <!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
 **Brain-Even:**
-[![demo](even.gif)](https://asciinema.org/a/JsRQuSIupcbRq5wv)
+[![demo](records/even.gif)](https://asciinema.org/a/iGpUnBzgqB7OqVi8)
 
 **Brain-Calc:**
-[![demo](calc.gif)](https://asciinema.org/a/rq2jlIqz69GMixZ0)
+[![demo](records/calc.gif)](https://asciinema.org/a/7iFLUKeAbot6qYG5)
+
+**Brain-Gcd:**
+[![demo](records/gcd.gif)](https://asciinema.org/a/KCAhWMYkWzhEEJe8)
 
 ---
 
