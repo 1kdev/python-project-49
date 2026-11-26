@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games.cli import welcome_user
+from brain_games.cli import welcome_user, wrong_answer_message, correct_answer_message, winner_message
 
 
 def main():
@@ -19,21 +19,18 @@ def play_game(name):
     correct_answers_count = 0
     while True:
         a, b = randint(0, 100), randint(0, 100)  # ruff: ignore[suspicious-non-cryptographic-random-usage]
-        gcd = gcd_calc(a, b)
+        correct_answer = gcd_calc(a, b)
         print(f"Question: {a} {b}")
         ask_user = input("Your answer: ")
 
-        if int(ask_user) == gcd:
-            print("Correct!")
-            correct_answers_count += 1
+        if int(ask_user) == correct_answer:
+            correct_answers_count += correct_answer_message()
         else:
-            print(f"'{ask_user}' is wrong answer ;(. "
-                    f"Correct answer was '{gcd}'")
-            print(f"Let's try again, {name}!")
+            wrong_answer_message(ask_user, correct_answer, name)
             return
 
         if correct_answers_count == 3:
-            print(f"Congratulations, {name}!")
+            winner_message(name)
             return
 
 
