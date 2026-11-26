@@ -19,7 +19,7 @@ def is_even(number):
 
 def play_game(name):
     correct_answer_counts = 0
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     while True:
         random_number = randint(0, 100)  # ruff: ignore[suspicious-non-cryptographic-random-usage]

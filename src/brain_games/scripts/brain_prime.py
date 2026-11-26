@@ -21,7 +21,7 @@ def is_prime(number):
 
 
 def play_game(name):
-    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     correct_answers_count = 0
     while True:
         number = randint(2, 100)  # ruff: ignore[suspicious-non-cryptographic-random-usage]
