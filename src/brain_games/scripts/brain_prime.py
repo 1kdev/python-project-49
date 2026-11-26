@@ -1,6 +1,11 @@
 from random import randint
 
-from brain_games.cli import welcome_user, correct_answer_message, wrong_answer_message, winner_message
+from brain_games.cli import (
+    correct_answer_message,
+    welcome_user,
+    winner_message,
+    wrong_answer_message,
+)
 
 
 def main():
@@ -19,16 +24,20 @@ def play_game(name):
     print('Answer "yes" if given number is prime. Otherwise answer "no"')
     correct_answers_count = 0
     while True:
-        number = randint(2, 100)
+        number = randint(2, 100)  # ruff: ignore[suspicious-non-cryptographic-random-usage]
         correct_answer = is_prime(number)
         print(f"Question: {number}")
-        user_ask = input("Your answer: ")
+        ask_user = input("Your answer: ")
 
-        if correct_answer:
-            correct_answers_count += correct_answer_message()
-
+        if is_prime(number):
+            correct_answer = "yes"
         else:
-            wrong_answer_message(user_ask, correct_answer, name)
+            correct_answer = "no"
+
+        if ask_user.lower() == correct_answer:
+            correct_answers_count += correct_answer_message()
+        else:
+            wrong_answer_message(ask_user, correct_answer, name)
             return
 
         if correct_answers_count == 3:

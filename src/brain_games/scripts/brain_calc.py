@@ -2,7 +2,12 @@ import operator
 import random
 from random import randint
 
-from brain_games.cli import welcome_user, wrong_answer_message, winner_message, correct_answer_message
+from brain_games.cli import (
+    correct_answer_message,
+    welcome_user,
+    winner_message,
+    wrong_answer_message,
+)
 
 
 def main():

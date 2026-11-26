@@ -35,6 +35,9 @@ cd python-project-49
 **Brain-Progression:**
 [![demo](records/progression.gif)](https://asciinema.org/a/UGPB7cCCyNwPjTLr)
 
+**Brain-Prime:**
+[![demo](records/prime.gif)](https://asciinema.org/a/F1EQHIBEHyZD1mlL)
+
 ---
 
 <details>
