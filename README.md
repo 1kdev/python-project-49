@@ -32,6 +32,9 @@ cd python-project-49
 **Brain-Gcd:**
 [![demo](records/gcd.gif)](https://asciinema.org/a/KCAhWMYkWzhEEJe8)
 
+**Brain-Progression:**
+[![demo](records/progression.gif)](https://asciinema.org/a/UGPB7cCCyNwPjTLr)
+
 ---
 
 <details>
