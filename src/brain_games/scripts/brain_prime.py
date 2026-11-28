@@ -1,3 +1,5 @@
+import math
+
 from random import randint
 
 from brain_games.cli import (
@@ -14,17 +16,19 @@ def main():
 
 
 def is_prime(number):
-    for d in range(2, number + 1):
+    if number < 2:
+        return False
+    for d in range(2, int(math.sqrt(number)) + 1):
         if number % d == 0:
-            break
-    return d == number
+            return False
+    return True
 
 
 def play_game(name):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     correct_answers_count = 0
     while True:
-        number = randint(2, 100)  # ruff: ignore[suspicious-non-cryptographic-random-usage]
+        number = randint(0, 100)  # ruff: ignore[suspicious-non-cryptographic-random-usage]
         correct_answer = is_prime(number)
         print(f"Question: {number}")
         ask_user = input("Your answer: ")
