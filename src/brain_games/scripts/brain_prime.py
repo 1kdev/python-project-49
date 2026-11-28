@@ -1,5 +1,4 @@
 import math
-
 from random import randint
 
 from brain_games.cli import (
